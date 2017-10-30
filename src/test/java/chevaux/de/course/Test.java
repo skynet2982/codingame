@@ -1,14 +1,17 @@
 package chevaux.de.course;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.fail;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Scanner;
 
 public class Test {
-	@org.junit.Test
+
+	private static final boolean SOLUTION_OK = true;
+
+	@org.testng.annotations.Test(enabled = SOLUTION_OK)
 	public void testSolution() {
 
 		try (InputStream resourceAsStream = this.getClass().getClassLoader()
@@ -18,7 +21,7 @@ public class Test {
 		} catch (IOException e) {
 			fail(e.getLocalizedMessage());
 		}
-		
+
 		try (InputStream resourceAsStream = this.getClass().getClassLoader()
 				.getResourceAsStream("chevaux.de.course/2.txt"); Scanner sc = new Scanner(resourceAsStream);) {
 			String sol = Solution.sol(sc);
@@ -26,7 +29,7 @@ public class Test {
 		} catch (IOException e) {
 			fail(e.getLocalizedMessage());
 		}
-		
+
 		try (InputStream resourceAsStream = this.getClass().getClassLoader()
 				.getResourceAsStream("chevaux.de.course/3.txt"); Scanner sc = new Scanner(resourceAsStream);) {
 			String sol = Solution.sol(sc);
