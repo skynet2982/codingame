@@ -1,13 +1,31 @@
-*.class
+.checkstyle
+.classpath
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# From m2e apt for automatic annotation compilation in Eclipse.
+.factorypath
+.project
+.settings
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# Intellij
+.idea/
+*.iml
+*.iws
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-/target/
+# Mac
+.DS_Store
+
+# Maven
+target/
+
+# TestNG
+test-output/
+logs/
+
+#m2e apt
+.factorypath
+/.apt_generated/
+/bin/
+
+# backup files
+*~
+
