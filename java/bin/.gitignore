@@ -1,0 +1,31 @@
+.checkstyle
+.classpath
+
+# From m2e apt for automatic annotation compilation in Eclipse.
+.factorypath
+.project
+.settings
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+target/
+
+# TestNG
+test-output/
+logs/
+
+#m2e apt
+.factorypath
+/.apt_generated/
+/bin/
+
+# backup files
+*~
+
