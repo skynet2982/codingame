@@ -1,4 +1,4 @@
 language: java
 install: true
 script:
- - /bin/bash /travis-scripts/java.sh `pwd`
+ - /bin/bash ./travis-scripts/java.sh `pwd`
