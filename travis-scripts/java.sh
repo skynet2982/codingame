@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rootDir=$(pwd)
+rootDir=$1
 
 # run java solutions tests
 cd ${rootDir}/java/
