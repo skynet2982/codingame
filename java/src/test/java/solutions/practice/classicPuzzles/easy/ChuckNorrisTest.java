@@ -17,7 +17,7 @@ public class ChuckNorrisTest extends AbstractTest {
 		try {
 			final ChuckNorrisTest test = new ChuckNorrisTest();
 			final List<String> testFiles = Arrays.asList("file01", "file02", "file03", "file04");
-			final String resourcesFolder = "practice/classic/puzzle/easy/chuckNorris/";
+			final String resourcesFolder = "solutions/practice/classicPuzzles/easy/chuckNorris/";
 
 			for (final String testFile : testFiles) {
 				try (Scanner sc = test.loadTestFile(resourcesFolder + testFile);) {

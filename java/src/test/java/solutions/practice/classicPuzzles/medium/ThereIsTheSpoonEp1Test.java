@@ -1,7 +1,7 @@
 /*
  * Author: Robin Péricé (2018)
  */
-package solutions.practice.classicPuzzles.easy;
+package solutions.practice.classicPuzzles.medium;
 
 import java.util.Arrays;
 import java.util.List;
@@ -19,7 +19,7 @@ public class ThereIsTheSpoonEp1Test extends AbstractTest {
 		try {
 			final ThereIsTheSpoonEp1Test test = new ThereIsTheSpoonEp1Test();
 			final List<String> testFiles = Arrays.asList("file01");
-			final String resourcesFolder = "practice/classic/puzzle/medium/thereIsTheSpoonEp1/";
+			final String resourcesFolder = "solutions/practice/classicPuzzles/medium/thereIsTheSpoonEp1/";
 
 			for (final String testFile : testFiles) {
 				try (Scanner sc = test.loadTestFile(resourcesFolder + testFile);) {

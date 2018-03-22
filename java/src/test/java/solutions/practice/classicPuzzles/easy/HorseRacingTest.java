@@ -10,8 +10,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Scanner;
 
-import solutions.practice.classicPuzzles.easy.HorseRacingSolution;
-
 public class HorseRacingTest {
 
 	private static final boolean SOLUTION_OK = true;
@@ -20,7 +18,7 @@ public class HorseRacingTest {
 	public void testSolution() {
 
 		try (InputStream resourceAsStream = this.getClass().getClassLoader()
-				.getResourceAsStream("practice/classic/puzzle/easy/horseRacing/file01");
+				.getResourceAsStream("solutions/practice/classicPuzzles/easy/horseRacing/file01");
 				Scanner sc = new Scanner(resourceAsStream);) {
 			final String sol = HorseRacingSolution.sol(sc);
 			assertTrue("1".equals(sol));
@@ -29,7 +27,7 @@ public class HorseRacingTest {
 		}
 
 		try (InputStream resourceAsStream = this.getClass().getClassLoader()
-				.getResourceAsStream("practice/classic/puzzle/easy/horseRacing/file02");
+				.getResourceAsStream("solutions/practice/classicPuzzles/easy/horseRacing/file02");
 				Scanner sc = new Scanner(resourceAsStream);) {
 			final String sol = HorseRacingSolution.sol(sc);
 			assertTrue("1".equals(sol));
@@ -38,7 +36,7 @@ public class HorseRacingTest {
 		}
 
 		try (InputStream resourceAsStream = this.getClass().getClassLoader()
-				.getResourceAsStream("practice/classic/puzzle/easy/horseRacing/file03");
+				.getResourceAsStream("solutions/practice/classicPuzzles/easy/horseRacing/file03");
 				Scanner sc = new Scanner(resourceAsStream);) {
 			final String sol = HorseRacingSolution.sol(sc);
 			assertTrue("47".equals(sol));

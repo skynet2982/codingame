@@ -18,7 +18,7 @@ public class AsciiArtTest extends AbstractTest {
 		try {
 			final AsciiArtTest test = new AsciiArtTest();
 			final List<String> testFiles = Arrays.asList("file01");
-			final String resourcesFolder = "practice/classic/puzzle/easy/asciiArt/";
+			final String resourcesFolder = "solutions/practice/classicPuzzles/easy/asciiArt/";
 
 			for (final String testFile : testFiles) {
 				try (Scanner sc = test.loadTestFile(resourcesFolder + testFile);) {
