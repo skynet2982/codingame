@@ -4,12 +4,12 @@
 ## Java : Pratice - Classic Puzzle - Easy
 | Puzzle | Java | C++ | Python | Go | 
 |----------|:-------------:|------:|-----:|-----:|
-| ASCII Art | [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/practice/classic/puzzle/easy/asciiArt/AsciiArtSolution.java) | wip | wip | wip |
-|  Defibrillators |  [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/practice/classic/puzzle/easy/defibrillators/DefibrillatorSolution.java) | wip | wip | wip |
-|  	Horse Racing | [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/practice/classic/puzzle/easy/horseRacing/HorseRacingSolution.java) | wip | wip | wip |
-|  	Mars Lander Episode 1 |  [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/practice/classic/puzzle/easy/marsLanderEp1/MarsLanderEp1Solution.java) | wip | wip | wip |
-|  	Mime Type | [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/practice/classic/puzzle/easy/mimeType/MimeTypeSolution.java) | wip | wip | wip |
-|  	On Boarding |  [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/practice/classic/puzzle/easy/onBoarding/OnBoardingSolution.java) | wip | wip | wip |
-|  	Power of Thor Episode 1 |  [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/practice/classic/puzzle/easy/powerOfThorEp1/PowerOfThorEp1Solution.java) | wip | wip | wip |
-|  	Temperatures |  [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/practice/classic/puzzle/easy/temperatures/TemperaturesSolution.java) | wip | wip | wip |
-|  	The Descent |  [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/practice/classic/puzzle/easy/theDescent/TheDescentSolution.java) | wip | wip | wip |
+| ASCII Art | [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/solutions/practice/classicPuzzles/easy/AsciiArtSolution.java) | wip | wip | wip |
+|  Defibrillators |  [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/solutions/practice/classicPuzzles/easy/DefibrillatorsSolution.java) | wip | wip | wip |
+|  	Horse Racing | [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/solutions/practice/classicPuzzles/easy/HorseRacingSolution.java) | wip | wip | wip |
+|  	Mars Lander Episode 1 |  [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/solutions/practice/classicPuzzles/easy/MarsLanderEp1Solution.java) | wip | wip | wip |
+|  	Mime Type | [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/solutions/practice/classicPuzzles/easy/MimeTypeSolution.java) | wip | wip | wip |
+|  	On Boarding |  [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/solutions/practice/classicPuzzles/easy/OnBoardingSolution.java) | wip | wip | wip |
+|  	Power of Thor Episode 1 |  [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/solutions/practice/classicPuzzles/easy/PowerOfThorEp1Solution.java) | wip | wip | wip |
+|  	Temperatures |  [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/solutions/practice/classicPuzzles/easy/TemperaturesSolution.java) | wip | wip | wip |
+|  	The Descent |  [link](https://github.com/r0perice/codingame/blob/master/java/src/main/java/solutions/practice/classicPuzzles/easy/TheDescentSolution.java) | wip | wip | wip |
