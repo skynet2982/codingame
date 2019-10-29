@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/r0perice/codingame.svg?branch=master)](https://travis-ci.org/r0perice/codingame)
+[![Build Status](https://api.travis-ci.com/r0perice/codingame.svg?branch=master)](https://travis-ci.com/r0perice/codingame/builds)
 [![My Codingame profile](https://img.shields.io/badge/Codingame-profile-blue.svg)](https://www.codingame.com/profile/0efaab4aba049a260e47aea4e8245f473589531)
 
 ## Java : Pratice - Classic Puzzle - Easy
