@@ -15,57 +15,74 @@ public class ChuckNorrisSolution implements ISolution {
 		final String input = in.nextLine();
 
 		final String strToBin = strToBin(input);
-		final StringBuilder r = new StringBuilder();
+		final StringBuilder result = new StringBuilder();
 
 		final char[] chars = strToBin.toCharArray();
 
-		bigloop: for (int i = 0; i < chars.length; i = i) {
+		int i = 0;
+		while (i < chars.length) {
 
-			if (chars[i] == '1') {
-				r.append("0 ");
-				char cur = chars[i];
-				char pre = '1';
-				while (cur == pre) {
-					r.append("0");
+			char current = chars[i];
 
-					if (i >= chars.length - 1) {
-						break bigloop;
-					}
-					pre = chars[i];
-					i++;
-					cur = chars[i];
+			if (current == '1') {
+				result.append("0 0");
+				
+				if (i >= chars.length - 1) {
+					break;
 				}
-				r.append(" ");
+				
+				char next = chars[i + 1];
 
+				while (current == next) {
+					result.append("0");
+					i++;
+					if (i >= chars.length - 1) {
+						break;
+					}
+					current = chars[i];
+					next = chars[i + 1];
+				}
+				result.append(" ");
 			} else {
-				r.append("00 ");
-				char cur = chars[i];
-				char pre = '0';
-				while (cur == pre) {
-					r.append("0");
-					if (i >= chars.length - 1) {
-						break bigloop;
-					}
-					pre = chars[i];
-					i++;
-					cur = chars[i];
+				result.append("00 0");
+				if (i >= chars.length - 1) {
+					break;
 				}
-				r.append(" ");
+				char next = chars[i + 1];
+
+				while (current == next) {
+					result.append("0");
+					i++;
+					if (i >= chars.length - 1) {
+						break;
+					}
+					current = chars[i];
+					next = chars[i + 1];
+				}
+				result.append(" ");
 			}
+			i++;
 		}
 
-		return r.toString();
+		char lastChar = result.charAt(result.length() - 1);
+		if (' ' == lastChar) {
+			result.deleteCharAt(result.length() - 1);
+		}
+		return result.toString();
 
 	}
 
 	private String strToBin(final String s) {
-		final StringBuilder builder = new StringBuilder();
-		for (final char c : s.toCharArray()) {
-			builder.append(Integer.toBinaryString(c));
-		}
-		while (builder.length() % 7 != 0) {
-			builder.insert(0, "0");
-		}
-		return builder.toString();
+		byte[] bytes = s.getBytes();
+        StringBuilder binary = new StringBuilder();
+        for (int j = 0; j < bytes.length; j++) {
+            int val = bytes[j];
+            for (int i = 0; i < 7; i++) {
+                val <<= 1;
+                binary.append((val & 128) == 0 ? 0 : 1);
+            }
+        }
+
+		return binary.toString();
 	}
 }
