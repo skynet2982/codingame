@@ -14,18 +14,18 @@ import common.ISolution;
 public class AsciiArtSolution implements ISolution {
 
 	private static class Letter {
-		private final List<String> lignes;
+		private final List<String> lines;
 
 		public Letter(final String nom) {
-			lignes = new ArrayList<>();
+			lines = new ArrayList<>();
 		}
 
-		public void addLigne(final String ligne) {
-			lignes.add(ligne);
+		public void addLine(final String line) {
+			lines.add(line);
 		}
 
-		public List<String> getLignes() {
-			return lignes;
+		public List<String> getLines() {
+			return lines;
 		}
 	}
 
@@ -50,7 +50,7 @@ public class AsciiArtSolution implements ISolution {
 		final Map<String, Letter> alphabet = new HashMap<>();
 
 		final int width = in.nextInt();
-		final int heigth = in.nextInt();
+		final int height = in.nextInt();
 		if (in.hasNextLine()) {
 			in.nextLine();
 		}
@@ -62,21 +62,21 @@ public class AsciiArtSolution implements ISolution {
 			alphabet.put(String.valueOf(c), new Letter(String.valueOf(c)));
 		}
 
-		for (int h = 0; h < heigth; h++) {
+		for (int h = 0; h < height; h++) {
 			final String cur = in.nextLine();
 			final char[] curChar = cur.toCharArray();
 			final List<String> chunks = buildChunk(curChar, width, word.length());
 			for (int i = 0; i < wordChar.length; i++) {
-				alphabet.get(String.valueOf(wordChar[i])).addLigne(chunks.get(i));
+				alphabet.get(String.valueOf(wordChar[i])).addLine(chunks.get(i));
 			}
 		}
 
 		final StringBuilder result = new StringBuilder();
-		for (int h = 0; h < heigth; h++) {
+		for (int h = 0; h < height; h++) {
 			for (final char c : word.toCharArray()) {
-				result.append(alphabet.get(String.valueOf(c).toLowerCase()).getLignes().get(h));
+				result.append(alphabet.get(String.valueOf(c).toLowerCase()).getLines().get(h));
 			}
-			if (h < heigth - 1) {
+			if (h < height - 1) {
 				result.append("\n");
 			}
 		}

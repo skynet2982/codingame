@@ -42,7 +42,6 @@ public class ChuckNorrisSolution implements ISolution {
 					current = chars[i];
 					next = chars[i + 1];
 				}
-				result.append(" ");
 			} else {
 				result.append("00 0");
 				if (i >= chars.length - 1) {
@@ -59,8 +58,8 @@ public class ChuckNorrisSolution implements ISolution {
 					current = chars[i];
 					next = chars[i + 1];
 				}
-				result.append(" ");
 			}
+			result.append(" ");
 			i++;
 		}
 

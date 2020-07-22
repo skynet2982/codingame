@@ -3,6 +3,8 @@
  */
 package solutions.practice.classicPuzzles.easy;
 
+import common.ISolution;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -11,44 +13,42 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-import common.ISolution;
-
 public class DefibrillatorsSolution implements ISolution {
 
-	public static class Defibrillateur {
-		private final String adresse;
-		private final int identifiant;
-		private final String nom;
+	public static class Defibrillator {
+		private final String address;
+		private final int identifier;
+		private final String name;
 		private final Point point;
-		private final String telephone;
+		private final String phone;
 
-		public Defibrillateur(final int identifiant, final String nom, final String adresse, final String telephone,
-				final Point point) {
-			this.identifiant = identifiant;
-			this.nom = nom;
-			this.adresse = adresse;
-			this.telephone = telephone;
+		public Defibrillator(final int identifier, final String nom, final String adresse, final String telephone,
+							 final Point point) {
+			this.identifier = identifier;
+			this.name = nom;
+			this.address = adresse;
+			this.phone = telephone;
 			this.point = point;
 		}
 
-		public String getAdresse() {
-			return adresse;
+		public String getAddress() {
+			return address;
 		}
 
-		public int getIdentifiant() {
-			return identifiant;
+		public int getIdentifier() {
+			return identifier;
 		}
 
-		public String getNom() {
-			return nom;
+		public String getName() {
+			return name;
 		}
 
 		public Point getPoint() {
 			return point;
 		}
 
-		public String getTelephone() {
-			return telephone;
+		public String getPhone() {
+			return phone;
 		}
 	}
 
@@ -74,16 +74,16 @@ public class DefibrillatorsSolution implements ISolution {
 	 * 1;Maison de la Prevention Sante;6 rue Maguelone 340000
 	 * Montpellier;;3,87952263361082;43,6071285339217
 	 */
-	public static Defibrillateur buildDefFromString(final String str) {
+	public static Defibrillator buildDefFromString(final String str) {
 		final String sep = ";";
 		final String[] split = str.split(sep);
-		final int identifiant = Integer.parseInt(split[0]);
+		final int identifier = Integer.parseInt(split[0]);
 		final String nom = split[1];
-		final String adresse = split[2];
-		final String telephone = split[3];
+		final String address = split[2];
+		final String phone = split[3];
 		final String longitude = split[4];
 		final String latitude = split[5];
-		return new Defibrillateur(identifiant, nom, adresse, telephone, new Point(longitude, latitude));
+		return new Defibrillator(identifier, nom, address, phone, new Point(longitude, latitude));
 	}
 
 	public static double computeDistance(final Point a, final Point b) {
@@ -107,7 +107,7 @@ public class DefibrillatorsSolution implements ISolution {
 		final Point user = new Point(LON, LAT);
 		final int N = input.nextInt();
 
-		final List<Defibrillateur> defibrillateurs = new ArrayList<>();
+		final List<Defibrillator> defibrillateurs = new ArrayList<>();
 		if (input.hasNextLine()) {
 			input.nextLine();
 		}
@@ -117,7 +117,7 @@ public class DefibrillatorsSolution implements ISolution {
 		}
 
 		final Map<Double, String> map = new HashMap<>();
-		defibrillateurs.parallelStream().forEach(a -> map.put(computeDistance(user, a.getPoint()), a.getNom()));
+		defibrillateurs.parallelStream().forEach(a -> map.put(computeDistance(user, a.getPoint()), a.getName()));
 		final Comparator<? super Double> comparator = (a, b) -> a.compareTo(b);
 		final List<Double> collect = map.keySet().parallelStream().sorted(comparator).collect(Collectors.toList());
 
