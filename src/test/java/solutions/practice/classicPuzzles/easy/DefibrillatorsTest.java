@@ -30,7 +30,7 @@ public class DefibrillatorsTest extends AbstractTest {
 					final DefibrillatorsSolution solution = new DefibrillatorsSolution();
 					final String solve = solution.solve(sc);
 					System.out.println(solve);
-					Assert.assertTrue(solutions.get(i++).equals(solve));
+					Assert.assertEquals(solve, solutions.get(i++));
 				}
 			}
 		} catch (final Exception e) {
