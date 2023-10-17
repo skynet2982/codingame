@@ -1,7 +1,7 @@
 /*
  * Author: Robin Péricé (2018)
  */
-package solutions.practice.sponsoredPuzzles.theGreatDispatch;
+package solutions.practice.sponsored;
 
 import java.util.ArrayList;
 import java.util.Comparator;

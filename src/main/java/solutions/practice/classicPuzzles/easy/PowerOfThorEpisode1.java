@@ -5,7 +5,7 @@ package solutions.practice.classicPuzzles.easy;
 
 import java.util.Scanner;
 
-class PowerOfThorEp1Solution {
+class PowerOfThorEpisode1 {
 
 	public static void main(final String args[]) {
 		final Scanner in = new Scanner(System.in);

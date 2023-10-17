@@ -6,14 +6,13 @@ package solutions.practice.classicPuzzles.easy;
 import common.AbstractTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import solutions.practice.classicPuzzles.easy.ascii.art.Solution;
 
 import java.io.IOException;
 import java.util.Scanner;
 
 public class AsciiArtTest extends AbstractTest {
 
-    public static final String TEST_FILES_BASE_DIR = "solutions/practice/classicPuzzles/easy/asciiArt/";
+    public static final String TEST_FILES_BASE_DIR = "solutions/practice/classicPuzzles/easy/AsciiArt/";
     private static final String TEST_FILE_4_5_G = TEST_FILES_BASE_DIR + "4_5_G";
     private static final String TEST_FILE_MANHATTAN = TEST_FILES_BASE_DIR + "MANHATTAN";
 
@@ -36,7 +35,7 @@ public class AsciiArtTest extends AbstractTest {
         // GIVEN
         try (Scanner sc = loadTestFile(TEST_FILE_4_5_G);) {
             // WHEN
-            final String solve = Solution.solve(sc);
+            final String solve = AsciiArt.solve(sc);
             // THEN
             Assert.assertEquals(solve, solution);
         }
@@ -61,7 +60,7 @@ public class AsciiArtTest extends AbstractTest {
         // GIVEN
         try (Scanner sc = loadTestFile(TEST_FILE_MANHATTAN);) {
             // WHEN
-            final String solve = Solution.solve(sc);
+            final String solve = AsciiArt.solve(sc);
             // THEN
             Assert.assertEquals(solve, solution);
         }

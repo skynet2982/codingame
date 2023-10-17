@@ -11,19 +11,18 @@ import org.testng.TestException;
 import org.testng.annotations.Test;
 
 import common.AbstractTest;
-import solutions.practice.classicPuzzles.medium.thereIsTheSpoonEp1.ThereIsTheSpoonEp1Solution;
 
-public class ThereIsTheSpoonEp1Test extends AbstractTest {
+public class ThereIsNoSpoonEpisode1Test extends AbstractTest {
 
 	public static void main(final String[] args) {
 		try {
-			final ThereIsTheSpoonEp1Test test = new ThereIsTheSpoonEp1Test();
+			final ThereIsNoSpoonEpisode1Test test = new ThereIsNoSpoonEpisode1Test();
 			final List<String> testFiles = Arrays.asList("file01");
-			final String resourcesFolder = "solutions/practice/classicPuzzles/medium/thereIsTheSpoonEp1/";
+			final String resourcesFolder = "solutions/practice/classicPuzzles/medium/ThereIsNoSpoonEpisode1/";
 
 			for (final String testFile : testFiles) {
 				try (Scanner sc = test.loadTestFile(resourcesFolder + testFile);) {
-					final ThereIsTheSpoonEp1Solution solution = new ThereIsTheSpoonEp1Solution();
+					final ThereIsNoSpoonEpisode1 solution = new ThereIsNoSpoonEpisode1();
 					final String solve = solution.solve(sc);
 					System.out.println(solve);
 				}

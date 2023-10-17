@@ -1,7 +1,7 @@
 /*
  * Author: Robin Péricé (2018)
  */
-package solutions.practice.sponsoredPuzzles.theGreatDispatch;
+package solutions.practice.sponsored;
 
 import static org.testng.Assert.fail;
 
@@ -14,8 +14,8 @@ public class TheGreatDispatchTest {
 	@org.testng.annotations.Test
 	public void test() {
 		try (InputStream is = this.getClass().getClassLoader()
-				.getResourceAsStream("solutions/practice/sponsoredPuzzles/theGreatDispatch/file06");
-			 Scanner sc = new Scanner(is);) {
+				.getResourceAsStream("solutions/practice/sponsored/TheGreatDispatch/file06");
+             Scanner sc = new Scanner(is);) {
 			// final String sol = Solution.solve(sc);
 
 		} catch (final IOException e) {

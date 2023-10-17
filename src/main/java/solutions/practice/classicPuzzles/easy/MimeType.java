@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-class MimeTypeSolution {
+class MimeType {
 
 	public static void main(final String args[]) {
 		final StringBuilder b = new StringBuilder();

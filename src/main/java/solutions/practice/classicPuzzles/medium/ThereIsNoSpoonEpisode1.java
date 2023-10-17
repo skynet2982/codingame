@@ -1,13 +1,13 @@
 /*
  * Author: Robin Péricé (2018)
  */
-package solutions.practice.classicPuzzles.medium.thereIsTheSpoonEp1;
+package solutions.practice.classicPuzzles.medium;
 
 import java.util.Scanner;
 
 import common.ISolution;
 
-public class ThereIsTheSpoonEp1Solution implements ISolution {
+public class ThereIsNoSpoonEpisode1 implements ISolution {
 
 	public static class Case {
 		boolean isNode;

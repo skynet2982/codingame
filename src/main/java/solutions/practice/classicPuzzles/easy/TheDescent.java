@@ -5,7 +5,7 @@ package solutions.practice.classicPuzzles.easy;
 
 import java.util.Scanner;
 
-class TheDescentSolution {
+class TheDescent {
 
 	public static void main(final String args[]) {
 		final Scanner in = new Scanner(System.in);

@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 import common.ISolution;
 
-public class ChuckNorrisSolution implements ISolution {
+public class Unary implements ISolution {
 
 	@Override
 	public String solve(final Scanner in) {

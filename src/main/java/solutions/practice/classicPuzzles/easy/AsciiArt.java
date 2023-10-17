@@ -1,7 +1,7 @@
 /*
  * Author: Robin Péricé (2022)
  */
-package solutions.practice.classicPuzzles.easy.ascii.art;
+package solutions.practice.classicPuzzles.easy;
 
 //////////////////////
 // SOLUTION - START //
@@ -24,7 +24,7 @@ import java.util.Scanner;
  * - Characters from a to z will be displayed in ASCII art by their uppercase equivalent.
  * - Characters that are not in the ranges [a-z] or [A-Z], will be displayed by ? in ASCII art.
  */
-public class Solution {
+public class AsciiArt {
 
     public static final char[] ALPHABET = new char[]{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
 			'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '?'};

@@ -12,16 +12,16 @@ import org.testng.annotations.Test;
 
 import common.AbstractTest;
 
-public class ChuckNorrisTest extends AbstractTest {
+public class UnaryTest extends AbstractTest {
 	public static void main(final String[] args) {
 		try {
-			final ChuckNorrisTest test = new ChuckNorrisTest();
+			final UnaryTest test = new UnaryTest();
 			final List<String> testFiles = Arrays.asList("file01", "file02", "file03", "file04");
-			final String resourcesFolder = "solutions/practice/classicPuzzles/easy/chuckNorris/";
+			final String resourcesFolder = "solutions/practice/classicPuzzles/easy/Unary/";
 
 			for (final String testFile : testFiles) {
 				try (Scanner sc = test.loadTestFile(resourcesFolder + testFile);) {
-					final ChuckNorrisSolution solution = new ChuckNorrisSolution();
+					final Unary solution = new Unary();
 					final String solve = solution.solve(sc);
 					System.out.println(solve);
 				}

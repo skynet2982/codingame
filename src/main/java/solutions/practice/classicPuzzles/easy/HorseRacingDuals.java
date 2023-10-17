@@ -6,7 +6,7 @@ package solutions.practice.classicPuzzles.easy;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class HorseRacingSolution {
+public class HorseRacingDuals {
 	private static String findHorse(final Scanner input) {
 		final int N = input.nextInt();
 		final int[] ints = new int[N];
