@@ -1,5 +1,5 @@
 [![Java CI with Gradle](https://github.com/skynet2982/codingame/actions/workflows/gradle.yml/badge.svg)](https://github.com/skynet2982/codingame/actions/workflows/gradle.yml)
-[![My Codingame profile](https://img.shields.io/badge/Codingame-profile-blue.svg)](https://www.codingame.com/profile/0efaab4aba049a260e47aea4e8245f473589531) 
+[![My Codingame profile](https://img.shields.io/badge/Codingame-profile-blue.svg)](https://www.codingame.com/profile/0efaab4aba049a260e47aea4e8245f473589531)
 
 ## Java : Pratice - Classic Puzzle - Easy
 | Puzzle                                                                                     |                                          Java                                           | C++ | Python | Go |
